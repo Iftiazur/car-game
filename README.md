@@ -62,5 +62,5 @@ To run the game locally, follow these steps:
 - Add power-ups or collectibles.
 
 ## Author
-Developed by [Your Name](https://github.com/Iftiazur). Feel free to contribute!
+Developed by [Iftiazur Rahman](https://github.com/Iftiazur). Feel free to contribute!
 

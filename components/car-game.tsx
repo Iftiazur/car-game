@@ -341,7 +341,7 @@ export default function CarGame() {
         {win && (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 rounded-lg">
             <h2 className="text-2xl font-bold text-green-500 mb-4">You Win!</h2>
-            <p className="text-white mb-2">Happy Birthday!!</p>
+            <p className="text-white mb-2">You won!!!</p>
             <p className="text-white mb-4">High score: {highScore}</p>
             <Button onClick={startGame}>Play Again</Button>
           </div>

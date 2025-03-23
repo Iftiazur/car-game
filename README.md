@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Car Game
 
-## Getting Started
+This is a simple car game built using React and the HTML5 Canvas API. The goal of the game is to avoid obstacles and reach a score of 100 points to win.
 
-First, run the development server:
+## Features
+- Move the car left or right using arrow keys or A/D keys.
+- Avoid randomly spawned obstacles.
+- Mobile-friendly touch controls.
+- Game over screen when hitting an obstacle.
+- Win condition upon reaching 100 points.
+- Tracks high score.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation & Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the game locally, follow these steps:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Iftiazur/car-game.git
+   cd car-game
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-## Learn More
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open your browser and navigate to `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Controls
+- **Keyboard Controls:**
+  - Move Left: Arrow Left or "A"
+  - Move Right: Arrow Right or "D"
+- **Touch Controls (Mobile):**
+  - Left button to move left
+  - Right button to move right
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Game Logic
+- The car is placed at the bottom of the screen.
+- Obstacles spawn from the top and move downward.
+- The player must dodge the obstacles.
+- Each avoided obstacle increases the score by 10.
+- The game ends if the car collides with an obstacle.
+- The player wins upon reaching 100 points.
 
-## Deploy on Vercel
+## Technologies Used
+- **React**: Frontend framework
+- **Canvas API**: Rendering the game objects
+- **Tailwind CSS**: Styling
+- **Lucide-react**: Icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Future Improvements
+- Add sound effects and background music.
+- Implement difficulty levels.
+- Improve mobile responsiveness.
+- Add power-ups or collectibles.
+
+## Author
+Developed by [Your Name](https://github.com/Iftiazur). Feel free to contribute!
+
